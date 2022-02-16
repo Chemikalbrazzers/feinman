@@ -1,3 +1,164 @@
+@keyframes qvadrat-blue {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(187.5deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.resources__logo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top:80px;
+    margin-bottom: 200px;
+}
+.resources__p1{
+    font-size: 50px;
+    font-weight: 700;
+   text-align: center;
+   padding-top: 130px;
+}
+.resources__p2{
+    text-align: center;
+    margin-top: -15px;
+}
+.resources{
+    background-color:  #F2F2F2;
+    height: 650px;
+    margin-top: -50px;
+}
+.khan {
+    background-color: #F2F2F2;
+    height: 1000px;
+    width: 100%;
+    position:absolute;
+    top:5330px;
+    /*z-index: 2;*/
+    overflow: hidden;
+   
+}
+.khan__p1{
+    font-size: 20px;
+}
+.khan__p2{
+    font-size: 40px;
+    font-weight: 700; 
+    margin-top: -15px;
+}
+.khan__p3 {
+    font-size: 20px;
+    margin-top: 20px; 
+    width: 600px;
+}
+.khan__p4{
+    width: 220px; 
+    margin-bottom: 55px;
+}
+.khan__p{
+    margin-left: 130px;
+}
+.khan__img{
+    margin-left: 130px;
+}
+.oakley{
+    display:flex;
+    margin-top: 160px;
+    background-color: #F2F2F2;
+    position:absolute;
+    z-index: 1;
+    top:3165px;
+    width: 100%;
+    height:500px ;
+
+}
+.oakley__p2{
+    margin-left: 50px;
+  /* margin-right: 50px;*/
+    width :1100px;
+    font-size:20px ;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:25px;
+    margin-bottom: 80px;
+    padding-top: 250px;
+}
+.oakley__p1{
+    margin-left: 80px;
+    width: 150px;
+    padding-top: 250px;
+}
+.iframe1{
+    padding-right: 20px;
+    
+}
+.video {
+    /*margin-bottom: 200px;*/
+    position:absolute;
+    z-index: 2;
+    margin-left: 35px;
+}
+.video__p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.video__p1{
+    text-align: center;
+    margin-top:-10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.video__iframe{
+    display:flex;
+    justify-content: center;
+    
+}
+.technics-block{
+    width:380px;
+    margin:50px;
+    text-align: center;
+    margin-top:150px;
+    
+    
+}
+.technics__pg{
+    display: flex;
+    font-size: 50px;
+    /*align-items: center;*/
+    position:absolute;
+    margin-top:-50px;
+    margin-left: 500px;
+    
+}
+.technics__pz {
+    display: flex;
+    font-size: 25px;
+    /*align-items: center;*/
+    position:absolute;
+    margin-left: 520px;
+}
+.technics-text{
+   /* display: flex;*/
+    /*text-align: center;*/
+    
+}
+.technics{
+ width:100%;
+    display:flex;
+   /* justify-content:space-around;*/
+    flex-wrap:wrap;
+    margin-top:100px;
+padding-left: 35px;
+
+}
+.technics-img{
+    border-radius:400px;
+    /*flex-wrap:wrap;*/
+}
 .divap {
     align-items: center;
 }
@@ -64,14 +225,14 @@
 
 }
 
-.description__block-one {
+/*.description__block-one {
 
     height: auto;
     width: auto;
 
 
 }
-
+*/
 .description__block_one-text {
     font-size: 18px;
     font-weight: normal;
@@ -82,13 +243,13 @@
 
 }
 
-.description__block-two {
+/*.description__block-two {
 
     height: auto;
     width: auto;
     display: block;
 }
-
+*/
 .description__block_two-text {
     font-size: 24px;
     font-weight: normal;
@@ -98,7 +259,7 @@
 }
 
 .description__block_three {
-
+    padding-top: -110px;
     height: auto;
     width: auto;
     display: block;
@@ -187,6 +348,12 @@
     top: 64px;
     right: 0px;
     display: flex;
+    animation-name: qvadrat-blue;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    animation-fill-mode:forwards;
+    
 }
 
 .header__img_page {
@@ -239,6 +406,7 @@
     height: auto;
     display: flex;
     position: relative;
+    z-index: 3;
 }
 
 .digits__box {
@@ -303,6 +471,7 @@ a {
     width: auto;
     background-color: #F2F2F2;
     position: relative;
+    overflow: hidden;
     /* выше установили ограничения для секции */
 }
 
@@ -364,12 +533,12 @@ a {
 
 .feinman {
     width: auto;
-    margin-top: 100px;
+   /* margin-top: 100px;*/
     height: 100vh;
     background-color: #F2F2F2;
     position: relative;
     display: flex;
-
+margin-top: 1125px;
 
 }
 
@@ -440,6 +609,7 @@ a {
     position: relative;
     background-color: #1F1F1F;
     overflow: hidden;
+    margin-top: 1095px;
 }
 
 .kaufman__boox {
@@ -449,12 +619,16 @@ a {
 }
 
 .kaufman__box-img {
-
 }
 
 .kaufman__img {
     margin-left: 750px;
-
+    animation-name: qvadrat-blue;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    animation-fill-mode:forwards;
+    
 
 }
 
@@ -654,8 +828,6 @@ a {
     left: 0px;
     top: 180px;
     margin-left: 50px;
-
-
 }
 
 .b {
